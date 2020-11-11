@@ -7,22 +7,22 @@ while(count != 10) {
    dice = Math.floor (Math.random() * 6) + 1;
    count = updateDice(dice);
 }
-console.log(diceCount.keys());
-console.log(diceCount);
+// console.log(diceCount.keys());
+// console.log(diceCount);
 var occurences = Array.from(diceCount.values());
 var max = Math.max(...occurences);
 var min = Math.min(...occurences);
 console.log("Maximum occurrences of die = " + max);
-console.log("Minimum occurrences of die= " + min);
+console.log("Minimum occurrences of die = " + min);
 diceCount.forEach((value, key)=>{
     if(value == max){
-        console.log("Maximum occurrences of " + key + " is occurring " + value + " times");
+        console.log("Maximum : " + key + " is occuring  " + value + " times");
     }
 })
-console.log("Minimum occurrences of ");
+
 diceCount.forEach((value, key)=>{
     if(value == min){
-        console.log(key + "is occurring " + value + " times");
+        console.log("Minimum : " + key + " is occuring " + value + " times");
     }
 })
 function updateDice(num){
