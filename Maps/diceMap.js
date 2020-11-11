@@ -7,8 +7,8 @@ while(count != 10) {
    dice = Math.floor (Math.random() * 6) + 1;
    count = updateDice(dice);
 }
-// console.log(diceCount.keys());
-// console.log(diceCount);
+console.log(diceCount.keys());
+console.log(diceCount);
 var occurences = Array.from(diceCount.values());
 var max = Math.max(...occurences);
 var min = Math.min(...occurences);
